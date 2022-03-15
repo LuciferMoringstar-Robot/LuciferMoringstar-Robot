@@ -1,11 +1,11 @@
 class LuciferMoringstar(object):
 
     DEFAULT_MSG = """
-‼ Maintenance ‼️
+**‼ Maintenance ‼️**
 
-Bot Will Be Down For Some Days For Maintenance..🥲
+**Bot Will Be Down For Some Days For Maintenance..🥲**
 
-Will Be UPDATED After Restart.
+**Will Be UPDATED After Restart.**
 """
 
     HELP_MSG = """**Help Veno Monuse 🤣**"""
