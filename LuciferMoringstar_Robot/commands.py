@@ -1,4 +1,4 @@
-from random import choice
+from random
 from config import START_MSG, FORCES_SUB, BOT_PICS, ADMINS, bot_info, DEV_NAME
 from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -43,7 +43,7 @@ async def start_message(bot, message):
          ]]
         reply_markup = InlineKeyboardMarkup(button)
         await message.reply_photo(
-            photo=choice(FORCES),
+            photo=random.choice(FORCES),
             caption=f"""<i><b>Hello {message.from_user.mention}. \nYou Have <a href="{invite_link.invite_link}">Not Subscribed</a> To <a href="{invite_link.invite_link}">My Update Channel</a>.So you do not get the Files on Inline Mode, Bot Pm and Group</i></b>""",
             reply_markup=reply_markup
         )
@@ -56,7 +56,7 @@ async def help(bot, message):
      InlineKeyboardButton("About 😎", callback_data="about")
      ]]
     await message.reply_photo(
-        photo = choice(BOT_PICS),
+        photo=random.choice(BOT_PICS),
         caption=LuciferMoringstar.HELP_MSG.format(mention=message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(button))
       
@@ -67,7 +67,7 @@ async def about(bot, message):
      InlineKeyboardButton("Close 🗑️", callback_data="close")
      ]]  
     await message.reply_photo(
-        photo = choice(BOT_PICS),
+        photo=random.choice(BOT_PICS),
         caption=LuciferMoringstar.ABOUT_MSG.format(mention=message.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME),
         reply_markup=InlineKeyboardMarkup(button))
         
