@@ -1,4 +1,3 @@
-from random
 from config import START_MSG, FORCES_SUB, BOT_PICS, ADMINS, bot_info, DEV_NAME
 from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
